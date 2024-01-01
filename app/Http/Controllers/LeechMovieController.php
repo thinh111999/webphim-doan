@@ -302,6 +302,7 @@ class LeechMovieController extends Controller
             $movie->status = 1;
             $movie->thuocphim = 0;
             $movie->year = $res['year'];
+            
             $category = Category::orderBy('id', 'DESC')->first();
             $movie->category_id = $category->id;
            
